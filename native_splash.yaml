@@ -1,0 +1,9 @@
+flutter_native_splash:
+  android: true 
+  ios: true 
+
+
+  background_image: "assets/backgroundmsa.png"
+  image: "assets/logomsa.png"
+  branding: "assets/MSA.png"
+
