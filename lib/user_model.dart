@@ -8,6 +8,7 @@ class Tasklist {
   String? maintenance_type;
   DateTime? created_at;
   DateTime? updated_at;
+  String? field_engineer_name;
 
   Tasklist({
     this.id,
@@ -19,6 +20,7 @@ class Tasklist {
     this.maintenance_type,
     this.created_at,
     this.updated_at,
+    this.field_engineer_name,
   });
 
   factory Tasklist.fromJson(Map<String, dynamic> json) {
@@ -32,6 +34,7 @@ class Tasklist {
       maintenance_type: json['maintenance_type'],
       created_at: DateTime.parse(json['created_at']),
       updated_at: DateTime.parse(json['updated_at']),
+      field_engineer_name: json['field_engineer']['name'],
     );
   }
 }

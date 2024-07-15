@@ -35,9 +35,9 @@ class LandingScreen extends StatelessWidget {
           children: [
             TextField(
               decoration: InputDecoration(
-                labelText: 'Engineer ID',
+                labelText: 'Engineer Name',
               ),
-              controller: TextEditingController(text: user.id.toString()),
+              controller: TextEditingController(text: user.field_engineer_name),
               readOnly: true,
             ),
             SizedBox(height: 16),
